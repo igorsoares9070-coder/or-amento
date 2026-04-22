@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, ViewStyle } from 'react-native';
+import { Pressable, StyleSheet, Text, TextStyle, ViewStyle } from 'react-native';
 import { colors } from '../theme/colors';
 import { radius, spacing } from '../theme/spacing';
 
@@ -78,7 +78,7 @@ const variantStyles: Record<Variant, ViewStyle> = {
   },
 };
 
-const textVariantStyles = StyleSheet.create({
+const textVariantStyles: Record<Variant, TextStyle> = {
   primary: {
     color: '#FFFFFF',
   },
@@ -88,4 +88,4 @@ const textVariantStyles = StyleSheet.create({
   danger: {
     color: colors.danger,
   },
-});
+};
